@@ -1,0 +1,47 @@
+.logo{
+	position: absolute;
+	left: 10px;
+	vertical-align: middle;
+	font-weight: 800;
+}
+.logo h1{
+	font-size: 18px;
+	margin: 0;
+    padding: 0;
+    
+
+}
+nav{
+	padding: 10px;
+	position: fixed;	
+	background-color: #EEEEEE;
+	height: 40px;
+	width: 100%;
+	text-align: right;
+}
+ul{
+	display: inline-block;
+	list-style: none;
+    font-size: 18px;
+    margin: 0;
+    padding: 0;
+    font-weight: 400;
+}
+li{
+	display: inline-block;
+	
+}
+a{
+	margin-right: 20px;
+	color: rgb(0, 75, 145);
+}
+main{
+	padding-top: 90px;
+}
+main div{
+	display: block;
+}
+img {
+	height: 27px;
+	border: 1px solid grey;
+}
