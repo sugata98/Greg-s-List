@@ -19,7 +19,7 @@
 <body>
   <!-- To finish the design, the HTML for the nav requires no additional elements, just the right CSS -->
   
-  <nav>
+  <nav class=navbar>
     <a class="logo">
       <h1> Greg's List</h1>
     </a>
@@ -30,11 +30,37 @@
   </nav>
 
   <main>
-    <form class='search' action='/some-server-endpoint' method='post'>
-      <label for="search-input">Search Jobs</label><br><br>
-      <input type="text" name="search-input" id="search-input" placeholder="Search software jobs" />
-      <a href="#"><img src="magnifying-glass.png"/></a> 
-
+    <section class="search-section">
+      <form class='search' action='/some-server-endpoint' method='post'>
+        <label for="search-input" class="label">Search Jobs</label>
+        <input type="text" name="search-input" id="search-input" placeholder="Search software jobs" class="search-input" />
+        <input type="image" role="button" class="search-button" src="magnifying-glass.png" alt="Search">
+      </form>
+    </section>
+    <nav class="page-nav">
+      <a class="pages-button" href="">&lt; prev</a>
+      <span class="pages-display">1 to 100 of 179</span>
+      <a class="pages-button" href="">next &gt;</a>
+    </nav>
+    <div class="listings">
+      <ul class="list">
+        <li class="listing">
+          <span class="date">June 22</span>
+          <a href="#" class="job">Technical Project Manager</a>
+          <span class="place">Midtown East</span>
+        </li>
+        <li class="listing">
+          <span class="date">June 21</span>
+          <a href="#" class="job">Frontend Developer</a>
+          <span class="place">SoHo</span>
+        </li>
+        <li class="listing">
+          <span class="date">June 20</span>
+          <a href="#" class="job">Senior Python Developer/ Cofounder</a>
+          <span class="place">Flatrion</span>
+        </li>
+    </div>
+    
   </main>
 </body>
 </html>
